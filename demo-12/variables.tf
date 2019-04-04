@@ -23,6 +23,7 @@ variable "username" {
 }
 
 variable "password" {
+  default = "test1234"
   description = "Master password of the DB"
 }
 

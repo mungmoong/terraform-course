@@ -11,3 +11,12 @@ variable "AMIS" {
     ap-northeast-2 = "ami-79815217"
   }
 }
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "/data/keys/mykey"
+}
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "/data/keys/mykey.pub"
+}
+variable "INSTANCE_USERNAME" {
+  default = "ubuntu"
+}

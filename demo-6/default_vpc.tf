@@ -18,14 +18,14 @@ resource "aws_default_subnet" "default_az1" {
         Name = "Default subnet for ${var.AWS_REGION}a"
     }
 }
-resource "aws_default_subnet" "default_az2" {
-  availability_zone = "${var.AWS_REGION}b"
-
-    tags {
-        Name = "Default subnet for ${var.AWS_REGION}b"
-        k = "1"
-    }
-}
+#resource "aws_default_subnet" "default_az2" {
+#  availability_zone = "${var.AWS_REGION}b"
+#
+#    tags {
+#        Name = "Default subnet for ${var.AWS_REGION}b"
+#        k = "1"
+#    }
+#}
 resource "aws_default_subnet" "default_az3" {
   availability_zone = "${var.AWS_REGION}c"
 
